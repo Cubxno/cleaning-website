@@ -1,0 +1,126 @@
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(91,176,186,255);
+  height: 50px;
+  width: 100vw;
+
+}
+
+.header-left{
+  width: 50px;
+  height: 100%;
+}
+
+.header-mid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+.about-us-link,
+ .services-link,
+  .book-now-link,
+   .careers-link{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+   } 
+
+.header-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 200px;
+  height: 100%;
+  border-radius: 50px 0 0 50px;
+}
+
+.main-img{
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+}
+
+.logo-img{
+  height: 100%;
+  border-radius: 0 50% 50% 0;
+}
+
+.contacts-icon{
+  height: 100%;
+  border-radius: 50%;
+}
+
+.sub-header,
+ .sub-header-p,
+  .symbol{
+  text-align: center;
+  color: rgba(91,176,186,255);
+  margin: 0 0 15px 0;
+}
+
+.sub-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 24px;
+}
+
+.sub-header-container-div{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sub-header-container-div p{
+  font-size: 11px;
+  color: rgba(91,176,186,255);
+}
+
+.sub-header-image{
+  height: 150px;
+  object-fit: contain;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100vw;
+  background-color: rgba(91,176,186,255);
+}
+
+.footer-bottom{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-bottom-content,
+ .footer-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: white;
+}
