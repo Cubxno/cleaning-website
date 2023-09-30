@@ -4,6 +4,12 @@
   line-height: 1.5;
 }
 
+html, 
+ body{
+  width: 100%;
+  overflow-x: hidden;
+ }
+
 body{
   display: flex;
   flex-direction: column;
@@ -57,7 +63,7 @@ body{
 
 .main-img{
   width: 100vw;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -100,22 +106,22 @@ body{
 }
 
 .sub-header-image{
-  height: 150px;
+  height: 200px;
   object-fit: contain;
 }
 
 .footer{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
-  height: 300px;
-  width: 100vw;
   background-color: rgba(91,176,186,255);
+  padding: 40PX;
+  width: 100vw;
 }
 
 .footer-bottom{
-  margin-top: 20px;
+padding: 10PX;
   display: flex;
   gap: 20px;
 }
@@ -131,6 +137,16 @@ body{
 }
 
 @media (max-width: 830px){
+  *{
+    padding: 0;
+  }
+
+  .main-img{
+    height: 300px;
+  }
+  .header{
+    width: 100%;
+  }
 
   .header-mid{
     visibility: hidden;
@@ -141,18 +157,20 @@ body{
     flex-direction: column;
     align-items: start;
     gap: 12px;
-    visibility: visible;
   }
 
   .header-left:hover{
-    width: 100px;
-    height: 200px;
+    width: 110px;
+    height: 190px;
     z-index: 1;
     position: absolute;
     top: 0;
     background-color: rgba(207,232,223,255);
     border-radius: 20px;
     transition: 0.1s;
+    .header-left-links{
+      visibility: visible;
+    }
   }
 
   .about-us-link,
@@ -160,15 +178,31 @@ body{
   .book-now-link,
    .careers-link{
     font-size: 14px;
-    padding-left: 20px;
+    padding: 0 10px 0 20px;
    } 
 
    .header-right{
-    width: 300px;
+    position: relative;
+    right: 0;
+    width: 0px;
    }
+
+   .header-right:hover{
+    .phone-number{
+      visibility: visible;
+    }
+    position:absolute;
+    width: 150px;
+    transition: 0.1s;
+   }
+
+  .contacts-icon{
+    border-radius: 50% 0 0 50%;
+  }
 
   .phone-number{
     font-size: 12px;
+    visibility: hidden;
   }
 
   .sub-header-container{
@@ -177,7 +211,7 @@ body{
 
   .sub-header-image{
     width: 80vw;
-    height: 100%;
+    height: 80%;
   }
 
 
@@ -190,6 +224,8 @@ body{
   }
 
   .footer{
-    height: 600px;
+    width: 100vw;
+    padding: 0;
   }
+
 }
