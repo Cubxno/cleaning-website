@@ -24,6 +24,8 @@ body{
   background-color: rgba(91,176,186,255);
   height: 50px;
   width: 100vw;
+  position: fixed;
+  top: 0;
 }
 
 .header-left{
@@ -72,6 +74,11 @@ body{
   border-radius: 0 50% 50% 0;
 }
 
+.logo-img-2{
+  height: 50px;
+  border-radius: 50%;
+}
+
 .contacts-icon{
   height: 100%;
   border-radius: 50%;
@@ -118,6 +125,9 @@ body{
   background-color: rgba(91,176,186,255);
   padding: 40PX;
   width: 100vw;
+  background-image: url("images/blue-background.jpg");
+  background-position: bottom;
+  background-size: cover;
 }
 
 .footer-bottom{
@@ -126,14 +136,28 @@ padding: 10PX;
   gap: 20px;
 }
 
-.footer-bottom-content,
- .footer-top{
+.footer-top{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+  color: white;
+  gap: 9px;
+}
+
+.footer-bottom-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
   gap: 3px;
   color: white;
+  border-left: solid;
+  padding-left: 8px;
+}
+
+.footer-bottom-content p{
+  font-size: 12px;
 }
 
 @media (max-width: 830px){
@@ -191,7 +215,7 @@ padding: 10PX;
     .phone-number{
       visibility: visible;
     }
-    position:absolute;
+    position: absolute;
     width: 150px;
     transition: 0.1s;
    }
