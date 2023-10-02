@@ -1,0 +1,44 @@
+body{
+  background-color: rgba(91,176,186,255);
+}
+
+h1{
+  position: absolute;
+  left: 40px;
+  top: 0px;
+}
+p,
+ li{
+  color: white;
+  font-size: 14px;
+}
+
+.title{
+  margin: 60px 0 10px 0;
+  color: white;
+}
+
+.phone-number{
+  color: black;
+}
+
+.bold{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.body{
+  margin: 110px 0 0 0;
+}
+
+
+@media (max-width: 830px){
+  *{
+    line-height: 2;
+  }
+
+  .body{
+    padding: 30px;
+    
+  }
+}

@@ -7,7 +7,6 @@
 }
 
 
-
 body{
   display: flex;
   flex-direction: column;
@@ -24,6 +23,7 @@ body{
   width: 100vw;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .header-left{
@@ -49,7 +49,21 @@ body{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    height: 50px;
    } 
+
+   .about-us-link:hover,
+    .services-link:hover,
+     .book-now-link:hover, 
+      .careers-link:hover{
+        background-color: rgba(207,232,223,0.2);
+        border-radius: 15px;
+        transition: all .15s ease-in-out;
+      }
 
 .header-right{
   display: flex;
@@ -166,6 +180,13 @@ padding: 10PX;
   .header-mid{
     visibility: hidden;
   }
+
+  .about-us-link,
+    .services-link,
+      .book-now-link,
+      .careers-link{
+    height: 100%;
+   }
 
   .header-left-links{
     display: flex;
