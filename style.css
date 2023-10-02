@@ -1,14 +1,12 @@
 *{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   line-height: 1.5;
 }
 
-html, 
- body{
-  width: 100%;
-  overflow-x: hidden;
- }
+
 
 body{
   display: flex;
@@ -125,9 +123,6 @@ body{
   background-color: rgba(91,176,186,255);
   padding: 40PX;
   width: 100vw;
-  background-image: url("images/blue-background.jpg");
-  background-position: bottom;
-  background-size: cover;
 }
 
 .footer-bottom{
@@ -161,10 +156,6 @@ padding: 10PX;
 }
 
 @media (max-width: 830px){
-  *{
-    padding: 0;
-  }
-
   .main-img{
     height: 300px;
   }
@@ -191,7 +182,7 @@ padding: 10PX;
     top: 0;
     background-color: rgba(207,232,223,255);
     border-radius: 20px;
-    transition: 0.1s;
+    transition: 0.05s;
     .header-left-links{
       visibility: visible;
     }
