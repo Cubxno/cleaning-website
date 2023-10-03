@@ -6,6 +6,9 @@
   line-height: 1.5;
 }
 
+.body-top p{
+  color: gray;
+}
 
 body{
   display: flex;
@@ -32,7 +35,7 @@ body{
 }
 
 .header-left-links{
-  visibility: hidden;
+  visibility: collapse;
 }
 
 .header-mid{
@@ -86,7 +89,7 @@ body{
   border-radius: 0 50% 50% 0;
 }
 
-.logo-img-2{
+.logo-img-footer{
   height: 50px;
   border-radius: 50%;
 }
@@ -94,6 +97,13 @@ body{
 .contacts-icon{
   height: 100%;
   border-radius: 50%;
+}
+
+.body-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .sub-header,
@@ -127,6 +137,8 @@ body{
 .sub-header-image{
   height: 200px;
   object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px rgba(91,176,186,255);
 }
 
 .footer{
@@ -169,16 +181,25 @@ padding: 10PX;
   font-size: 12px;
 }
 
-@media (max-width: 830px){
+@media only screen and (max-width: 830px){
   .main-img{
     height: 300px;
   }
+
+  .logo-img{
+    box-shadow: 1px 2px 5px grey;
+  }
+
+  .contacts-icon{
+    box-shadow: -1px 2px 5px grey;
+  }
+
   .header{
     width: 100%;
   }
 
   .header-mid{
-    visibility: hidden;
+    visibility: collapse;
   }
 
   .about-us-link,
@@ -207,6 +228,9 @@ padding: 10PX;
     .header-left-links{
       visibility: visible;
     }
+    .logo-img{
+      box-shadow: none;
+    }
   }
 
   .about-us-link,
@@ -218,7 +242,6 @@ padding: 10PX;
    } 
 
    .header-right{
-    position: relative;
     right: 0;
     width: 0px;
    }
@@ -230,6 +253,9 @@ padding: 10PX;
     position: absolute;
     width: 150px;
     transition: 0.1s;
+    .contacts-icon{
+      box-shadow: none;
+    }
    }
 
   .contacts-icon{
@@ -246,7 +272,7 @@ padding: 10PX;
   }
 
   .sub-header-image{
-    width: 80vw;
+    width: 40vw;
     height: 80%;
   }
 
