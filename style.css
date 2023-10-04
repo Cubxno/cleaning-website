@@ -186,6 +186,10 @@ padding: 10PX;
     height: 300px;
   }
 
+  .header-mid{
+    position: absolute;
+  }
+
   .logo-img{
     box-shadow: 1px 2px 5px grey;
   }
