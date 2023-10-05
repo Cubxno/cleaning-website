@@ -15,6 +15,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .header{
@@ -40,9 +41,11 @@ body{
 
 .header-mid{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 400px;
+  align-items: start;
+  justify-content: left;
+  gap: 40px;
+  padding-left: 40px;
+  width: 100vw;
 }
 
 .about-us-link,
@@ -55,7 +58,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 6px;
+    padding: 0;
     height: 50px;
    } 
 
@@ -194,11 +197,7 @@ padding: 10PX;
 }
 
 @media only screen and (max-width: 830px){
-  html{
-    max-width: 100vw;
-  }
   body{
-    overflow-x: hidden;
     max-width: 100vw;
   }
   .main-img{
@@ -206,7 +205,12 @@ padding: 10PX;
   }
 
   .header-mid{
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 0 100px 0 0;
+    width: 100vw;
     position: absolute;
+    left: 60px;
   }
 
   .logo-img{
@@ -217,53 +221,13 @@ padding: 10PX;
     box-shadow: -1px 2px 5px grey;
   }
 
-  .header{
-    width: 100%;
-  }
-
-  .header-mid{
-    visibility: collapse;
-  }
-
   .about-us-link,
     .services-link,
       .book-now-link,
       .careers-link{
-    height: 100%;
+    height: 50px;
+    min-width: 90px;
    }
-
-  .header-left-links{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 12px;
-    position: absolute;
-  }
-
-  .header-left:hover{
-    width: 110px;
-    height: 190px;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    background-color: rgba(207,232,223,255);
-    border-radius: 20px;
-    transition: 0.05s;
-    .header-left-links{
-      visibility: visible;
-    }
-    .logo-img{
-      box-shadow: none;
-    }
-  }
-
-  .about-us-link,
- .services-link,
-  .book-now-link,
-   .careers-link{
-    font-size: 14px;
-    padding: 0 10px 0 20px;
-   } 
 
    .header-right{
     right: 0;
@@ -274,8 +238,8 @@ padding: 10PX;
    .header-right:hover{
     .phone-number{
       visibility: visible;
+      z-index: 1;
     }
-    position: absolute;
     width: 150px;
     transition: 0.1s;
     .contacts-icon{
@@ -293,21 +257,12 @@ padding: 10PX;
   }
 
   .sub-header-container{
-    overflow-x: hidden;
+    overflow-x: scroll;
     white-space: nowrap;
     width: 100vw;
     height: 320px;
     padding: 0 20px;
     gap: 20vw;
-  }
-
-  .sub-header-container:hover{
-    overflow-x: scroll;
-  }
-  .sub-header-image:hover{
-    .sub-header-container{
-      overflow-x: scroll;
-    }
   }
 
   .sub-header-container-div{
@@ -316,7 +271,7 @@ padding: 10PX;
   }
 
   .sub-header-image{
-    width: 40vw;
+    width: 200px;
     height: 100%;
     object-fit: cover;
   }
@@ -343,9 +298,6 @@ padding: 10PX;
 }
 
 @media only screen and (min-width: 1000px){
-  .header-mid{
-    width: 40vw;
-  }
 
   .main-img{
     height: 35vw;
