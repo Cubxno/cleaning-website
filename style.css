@@ -117,6 +117,10 @@ body{
   margin: 0 0 15px 0;
 }
 
+.sub-header-container::-webkit-scrollbar{
+  display: none;
+}
+
 .sub-header-container{
   display: flex;
   justify-content: space-between;
@@ -134,7 +138,7 @@ body{
 }
 
 .btn-container{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   width: 120px;
@@ -154,6 +158,27 @@ body{
   color: white;
   background-color: rgba(91,176,186,255);
   border: white;
+  transition: .1s ease-in-out;
+ }
+
+ .mail-us-btn{
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 3px;
+  margin-bottom: 20px;
+ }
+
+ .mail-icon{
+  height: 30px;
+ }
+
+ .mail-us-btn:active{
+  filter: invert(100%);
+  transition: .1s ease-in-out;
  }
 
 .footer{
@@ -197,6 +222,9 @@ padding: 10PX;
 }
 
 @media only screen and (max-width: 830px){
+  *{
+    max-width: 100vw;
+  }
   body{
     max-width: 100vw;
   }
@@ -204,6 +232,10 @@ padding: 10PX;
     height: 300px;
   }
 
+  .header-mid::-webkit-scrollbar{
+    display: none;
+  }
+  
   .header-mid{
     overflow-x: scroll;
     white-space: nowrap;
@@ -259,7 +291,7 @@ padding: 10PX;
   .sub-header-container{
     overflow-x: scroll;
     white-space: nowrap;
-    width: 100vw;
+    max-width: 100vw;
     height: 320px;
     padding: 0 20px;
     gap: 20vw;
@@ -291,8 +323,9 @@ padding: 10PX;
   }
 
   .footer{
+    align-items: start;
     width: 100vw;
-    padding: 0;
+    padding: 0 0 0 20px;
   }
 
 }
@@ -323,14 +356,10 @@ padding: 10PX;
   }
 
   .sub-header-container{
-    overflow-x: hidden;
+    overflow-x: scroll;
     white-space: nowrap;
     width: 100vw;
     gap: 5vw;
-  }
-
-  .sub-header-container:hover{
-    overflow-x: scroll;
   }
 
   .sub-header-p{
