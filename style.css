@@ -129,6 +129,12 @@ body{
   gap: 24px;
 }
 
+.sub-header-container-div{
+  display: flex;
+  gap: 12px;
+  transition: 1s;
+}
+
 .sub-header-image{
   height: 300px;
   width: 300px;
@@ -170,6 +176,7 @@ body{
   border: none;
   box-shadow: 1px 1px 3px;
   margin-bottom: 20px;
+  color: rgba(0,167,235,255);
  }
 
  .mail-icon{
@@ -177,7 +184,7 @@ body{
  }
 
  .mail-us-btn:active{
-  filter: invert(100%);
+  box-shadow: none;
   transition: .1s ease-in-out;
  }
 
@@ -297,22 +304,11 @@ padding: 10PX;
     gap: 20vw;
   }
 
-  .sub-header-container-div{
-    width: 200px;
-    height: 300px;
-  }
-
   .sub-header-image{
-    width: 200px;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
   }
-
-  .back-btn,
- .next-btn{
-  visibility: hidden;
-}
-
 
   .footer-bottom{
     flex-direction: column;
@@ -338,6 +334,7 @@ padding: 10PX;
 
   .sub-header-image{
     height: 30vw;
+    width: 30vw;
   }
 
   .footer{
